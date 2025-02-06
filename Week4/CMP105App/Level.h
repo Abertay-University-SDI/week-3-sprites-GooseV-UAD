@@ -5,6 +5,9 @@
 #include "Framework/Input.h"
 #include "Player.h"
 #include "Enemy.h"
+#include "Ghoul.h"
+#include "Cursor.h"
+#include "Background.h"
 #include "Framework/GameObject.h"
 #include <string.h>
 #include <iostream>
@@ -21,8 +24,11 @@ public:
 
 private:
 	// Level objects
+	Cursor theAccursedOne;
+	Background backObject;
 	Player playerObject;
 	Enemy enemyObject;
+	Ghoul ghoulObject; // Ghoul is a child of Enemy
 	sf::Texture texture;
 
 };

@@ -3,7 +3,8 @@
 Enemy::Enemy() {
 	texture.loadFromFile("gfx/Goomba.png");
 	if (!texture.loadFromFile("gfx/Goomba.png")) {
-		std::cout << "texture not found \n";
+		std::cout << "Texture not located for object Enemy" << std::endl;
+		texture.loadFromFile("fallback/noTex.png");
 	}
 	this->setTexture(&texture);
 	this->setSize(sf::Vector2f(100, 100));

@@ -12,7 +12,7 @@ class Player : public GameObject {
 		Player();
 		~Player();
 
-		void playerInput(float dt);
+		void playerInput(float dt, float winX, float winY);
 
 	private:
 		sf::Texture texture;
